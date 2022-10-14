@@ -4,46 +4,40 @@
     <meta charset="UTF-8">
     <title>task_html_3</title>
   </head>
-  <style>
- /*{
-    background-color: #93B874;
-}*/
-  </style> 
-
 <body>
  <h1>Let's create some nice links</h1>
  <ol>
-  <li><h2>Absolute URL hyperlinks</h2></li>
+  <li><h2><a id="Absolute_URL_link">Absolute URL hyperlinks</a></h2></li>
   <dl>
    <dt><p><a href="https://www.w3.org/">W3C</a></p><dt>     
    <dt><p><a href="https://www.google.com">Google</a></p></dt>
-    <li><h2>Relative URL hyperlinks</h2></li>
+    <li><h2><a id="Relative_URL_link">Relative URL hyperlinks</a></h2></li>
    <dt><p><a href="1-task_1.html">Task 1</a></p></dt>
    <dt><p><a href="1-task_2.html">Task 2</a></p></dt>
-    <li><h2>Image hyperlink</h2></li>
+    <li><h2><a id="Image_hyperlink">Image hyperlink</a></h2></li>
    <dt>Click on picture below to see my pet photo:</dt>
    </dl>
     <p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg">
       <img src="img/myCat.jpg" alt="">
     </a></p>
-   <li><h2>Different targets of links</h2></li>
+   <li><h2><a id="Image_hyperlink">Different targets of links</a></h2></li>
     <ul>
       <li><a href="https://www.w3schools.com/codegame/index.html">This is link to my favorite browser game that will open in the current tab.</a></li>
-      <li><a href="https://www.w3schools.com/codegame/index.html">This is the same link that will open in a new tab.</a></li>
+      <li><a href="https://www.w3schools.com/codegame/index.html" target="_blank">This is the same link that will open in a new tab.</a></li>
  
       <iframe width="700" height="350" src="1-task3.1.html"> </iframe>
     </ul>
 
-    <li><h2>Content</h2></li>
+    <li><h2><a id="Content_hyperlink">Content</a></h2></li>
     <p>There is a list of bookmarks to paragraphs of the page:</p>
       <ol>
         
-        <li> Absolute URL hyperlinks</li>
-        <li> Relative URL hyperlinks</li>
-        <li> Image hyperlink</li>
-        <li> Different targets of links</li>
-        <li> Content</li>
-        <li> Task3.1 file paragraph</li>
+        <li> <a href="#Absolute_URL_link"> Absolute URL hyperlinks</a></li>
+        <li> <a href="#Relative_URL_link"> Relative URL hyperlinks</a></li>
+        <li> <a href="#Image_hyperlink">   Image hyperlink</a></li>
+        <li> <a href="#Different_target_hyperlink">Different targets of links</a></li>
+        <li> <a href="#Content_hyperlink">Content</a></li>
+        <li> <a href="1-task3.1.html" download="">Task3.1 file paragraph</a></li>
     </ol>
   </ol>
   </body>
