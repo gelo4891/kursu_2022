@@ -57,7 +57,7 @@
   <h1>
     <p>Let's take a look on owr pets</p>
   </h1>
-    <img src="img/bill.jpg" alt="">
+    <img src="img/bill.jpg" alt="horse">
   <hr>
     <h1>
       <p>Hedwig</p>
@@ -65,14 +65,26 @@
     <p>Hedwig's photo is from the internet, because we don't have our own photo.</p>
     <p>We changed it size to 75% of screen width because it was too large.</p>
     <p>Also if you make screen width smaller, you'll see Hedwig a bit closer.</p>
-    <img src="https://images.ctfassets.net/usf1vwtuqyxm/lbxISOVdOS64U428cc6mW/d4f3c826f6fc0f6b856c5e62c1be61c4/WB_F1_Hedwig_HarryHoldsHedwig_1383R_v2.jpg" width="75%" height="75%">
+    <img 
+        srcset="https://images.ctfassets.net/usf1vwtuqyxm/lbxISOVdOS64U428cc6mW/d4f3c826f6fc0f6b856c5e62c1be61c4/WB_F1_Hedwig_HarryHoldsHedwig_1383R_v2.jpg 800w,
+                https://static.wikia.nocookie.net/harrypotter/images/1/1e/Hedwig_Snowy_Owl_PM.png/revision/latest?cb=20161123234010 700w"
+        sizes="(max-width: 700px) 700px,
+                800px"
+        src="https://images.ctfassets.net/usf1vwtuqyxm/lbxISOVdOS64U428cc6mW/d4f3c826f6fc0f6b856c5e62c1be61c4/WB_F1_Hedwig_HarryHoldsHedwig_1383R_v2.jpg" width="75%"
+    >
   <hr>
   <h1>
     <p>Scabbers</p>
   </h1>
   <p>There is not only Scabbers on the next picture. Try to find all characters using mouse pointer.</p>
-  <p><img src="img/scabbers.jpg" alt=""></p>
+  
+  <img src="img/scabbers.jpg" alt="title of images" usemap="#img_title">
+  <map name="img_title">
+    <area shape="rect" coords="70,135,170,190" title="may-may-may-may-may-may">
+    <area shape="poly" coords="135,94,135,20,167,20,180,42,200,42,198,75,211,89" title="hi-hi-hi-hi-hi-hi-hi">
+    <area shape="rect" coords="210,347,240,370" title="pi-pi-pi">
+    <area shape="circle" coords="213,400,150" title="o_o">    
+  </map>
 
-There is not only Scabbers on the next picture. Try to find all characters using mouse pointer.
 </body>
 </html>
