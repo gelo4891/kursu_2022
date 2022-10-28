@@ -1,3 +1,63 @@
-table{
-    
+.table_1,.table_2 {
+    width:      46%;  
+      
+   /* border:     4px solid blue;/*-----------тимчасові для перевірки-------------------*/
+    display:    inline-block; /*блочні обьєкти розміщуємо в лінію*/    
 }
+
+table{ 
+    margin: 2%;
+    border: 1px solid rgba(247, 247, 1, 0.795);  /* задаємо значення меж таблиці*/  
+    border-collapse: collapse;   /* зєднуємо межі таблиць*/ 
+    font-family: 'Literata', sans-serif;  
+}
+
+table th, td{     
+    border: 1px solid yellow;    
+}
+/*
+th, td{
+    width: 2%;
+}
+*/
+.rows thead th{
+    /*border: 1px solid yellow;*/
+    color: aliceblue;
+    background-color: rgb(199, 199, 62) ;
+}
+
+.rows th{
+    text-align: left;
+}
+
+thead th{
+    font-size: 16px;
+}
+
+tbody{
+    font-size: 1.2em;
+}
+/*
+th{    
+    font-weight: 900;
+}
+
+td{    
+    font-weight: 300;
+}
+*/
+
+caption{
+    font-size: 1.3em; /*розмір шрифта заголовка*/
+    font-weight: 900;
+ /*   font-weight:bolder; /*жирность шрифта*/
+}
+
+.rows caption{
+    caption-side:bottom; /*розміщення заголовка таблиці знизу*/
+}
+
+.columns caption{    
+    text-align: right; /*розміщення заголовка таблиці зправа*/
+}
+
