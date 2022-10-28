@@ -1,3 +1,4 @@
+/*--------------------------------загальні парасетри до двох таблиць-----------------*/
 .table_1,.table_2 {
     width:      46%;  
       
@@ -13,21 +14,7 @@ table{
 }
 
 table th, td{     
-    border: 1px solid yellow;    
-}
-/*
-th, td{
-    width: 2%;
-}
-*/
-.rows thead th{
-    /*border: 1px solid yellow;*/
-    color: aliceblue;
-    background-color: rgb(199, 199, 62) ;
-}
-
-.rows th{
-    text-align: left;
+    border: 1px solid #FFFF00;    
 }
 
 thead th{
@@ -37,6 +24,48 @@ thead th{
 tbody{
     font-size: 1.2em;
 }
+/*-----------------------------------------------------------------------------------*/
+/*
+th, td{
+    width: 2%;
+}
+*/
+/* ----------------------все відноситься до класу rows--------------------------------*/
+.rows thead th{
+    /*border: 1px solid yellow;*/
+    color: aliceblue;
+    background-color: #FFC000 ;
+}
+
+.rows tr:nth-child(2n+2){
+    background-color: #FFF2CC ;
+}
+
+.rows th{
+    text-align: left;
+}
+.rows caption{
+    caption-side:bottom; /*розміщення заголовка таблиці знизу*/
+}
+/*---------------------------------------------------------------------------*/
+
+/* ----------------------все відноситься до класу columns------------------------*/
+.columns caption{    
+    text-align: right; /*розміщення заголовка таблиці зправа*/
+}
+
+.columns thead th{
+    /*border: 1px solid yellow;*/    
+    background-color: #FFC000 ;
+}
+
+.columns tbody th{
+    /*border: 1px solid yellow;*/    
+    background-color: #FFF2CC ;
+}
+/*---------------------------------------------------------------------------*/
+
+
 /*
 th{    
     font-weight: 900;
@@ -53,11 +82,6 @@ caption{
  /*   font-weight:bolder; /*жирность шрифта*/
 }
 
-.rows caption{
-    caption-side:bottom; /*розміщення заголовка таблиці знизу*/
-}
 
-.columns caption{    
-    text-align: right; /*розміщення заголовка таблиці зправа*/
-}
+
 
