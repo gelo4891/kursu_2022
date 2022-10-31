@@ -1,35 +1,49 @@
 /*--------------------------------загальні парасетри до двох таблиць-----------------*/
 .table_1,.table_2 {
-    width:      46%;  
-      
+    width:      46%;   
    /* border:     4px solid blue;/*-----------тимчасові для перевірки-------------------*/
     display:    inline-block; /*блочні обьєкти розміщуємо в лінію*/    
 }
 
 table{ 
     margin: 2%;
+    /*margin: 2%;*/
     border: 1px solid rgba(247, 247, 1, 0.795);  /* задаємо значення меж таблиці*/  
     border-collapse: collapse;   /* зєднуємо межі таблиць*/ 
     font-family: 'Literata', sans-serif;  
+  
 }
 
 table th, td{     
-    border: 1px solid #FFFF00;    
+    border: 1px solid #FFFF00;   
+    border-width: 2%; 
+    padding: 2%;
+    
+}
+thead th {
+    font-size: 1.2em;
 }
 
-thead th{
-    font-size: 16px;
+caption{
+    font-size: 1.3em; /*розмір шрифта заголовка*/
+    font-weight: bold;/*жирность шрифта*/
+    padding: 0.3em; /*відступ з усіх сторін*/
 }
 
 tbody{
-    font-size: 1.2em;
+    font-size: 16px;
 }
+
+th{    
+    font-weight: 700;
+}
+
+td{    
+    font-weight: 300;    
+}
+
 /*-----------------------------------------------------------------------------------*/
-/*
-th, td{
-    width: 2%;
-}
-*/
+
 /* ----------------------все відноситься до класу rows--------------------------------*/
 .rows thead th{
     /*border: 1px solid yellow;*/
@@ -47,6 +61,10 @@ th, td{
 .rows caption{
     caption-side:bottom; /*розміщення заголовка таблиці знизу*/
 }
+
+.rows tbody tr:hover {
+    background-color: #ff002b;
+}
 /*---------------------------------------------------------------------------*/
 
 /* ----------------------все відноситься до класу columns------------------------*/
@@ -63,24 +81,14 @@ th, td{
     /*border: 1px solid yellow;*/    
     background-color: #FFF2CC ;
 }
+
+.columns cite:hover{
+    font-weight: 900;
+}
 /*---------------------------------------------------------------------------*/
 
 
-/*
-th{    
-    font-weight: 900;
-}
 
-td{    
-    font-weight: 300;
-}
-*/
-
-caption{
-    font-size: 1.3em; /*розмір шрифта заголовка*/
-    font-weight: 900;
- /*   font-weight:bolder; /*жирность шрифта*/
-}
 
 
 
