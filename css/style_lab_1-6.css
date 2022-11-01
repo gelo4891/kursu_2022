@@ -1,40 +1,55 @@
-/*--------------------------------загальні парасетри до двох таблиць-----------------*/
+.flax_div{
+    display: flex;
+    margin: 2%;
+}
+/*--------------------------------загальні параметри до двох таблиць-----------------*/
+
 .table_1,.table_2 {
-    width:      46%;   
-   /* border:     4px solid blue;/*-----------тимчасові для перевірки-------------------*/
-    display:    inline-block; /*блочні обьєкти розміщуємо в лінію*/    
+    width: 46%;  
+ 
 }
 
-table{ 
+.table_1 table, .table_2 table{
     margin: 2%;
-    /*margin: 2%;*/
-    border: 1px solid rgba(247, 247, 1, 0.795);  /* задаємо значення меж таблиці*/  
+}
+
+.table_1 tbody,.table_2 tbody {
+    font-size: 16px;
+}
+
+
+.table_1 table th,.table_1 table td{
+    padding: 2%;
+  /* font-size: 16px;*/
+  }
+
+  .table_1 table, .table_2 table {     
+    width: 92%;   
+    border: 1px solid rgba(247, 247, 1, 0.795);  /*задаємо значення меж таблиці*/  
     border-collapse: collapse;   /* зєднуємо межі таблиць*/ 
     font-family: 'Literata', sans-serif;  
-  
-}
+    }
+/*
+#id_Country_test {
+    padding-right: 10%;
+    padding-top: 10%;
+}*/
 
 table th, td{     
     border: 1px solid #FFFF00;   
-    border-width: 2%;     
-    padding: 2%;
-    
 }
+
 thead th {
     font-size: 1.2em;
 }
 
 caption{
     font-size: 1.3em; /*розмір шрифта заголовка*/
-    font-weight: bold;/*жирность шрифта*/
-    padding: 0.3em; /*відступ з усіх сторін*/
+    font-weight: bold;/*жирность шрифта*/  
+   /* padding: 0.3em;/*відступ з усіх сторін*/
 }
 
-tbody{
-    font-size: 16px;
-}
-
-th{    
+th{  
     font-weight: 700;
 }
 
@@ -42,54 +57,64 @@ td{
     font-weight: 300;    
 }
 
+@media screen and (max-width: 900px) {
+    .flax_div{
+        display: block;   
+    }
+
+    .table_1,.table_2 {
+        width: 100%;     
+        margin: 2%;
+      }
+
+      .table_1 table, .table_2 table{ 
+        width: 92%;
+      }
+}
+
 /*-----------------------------------------------------------------------------------*/
 
 /* ----------------------все відноситься до класу rows--------------------------------*/
-.rows thead th{
+
+
+.table_1 thead th{    
     /*border: 1px solid yellow;*/
     color: aliceblue;
     background-color: #FFC000 ;
 }
 
-.rows tr:nth-child(2n+2){
+.table_1 tr:nth-child(2n+2){
     background-color: #FFF2CC ;
 }
 
-.rows th{
+.table_1 th{
     text-align: left;
 }
-.rows caption{
+
+.table_1 caption{
     caption-side:bottom; /*розміщення заголовка таблиці знизу*/
 }
 
-.rows tbody tr:hover {
+.table_1 tbody tr:hover {
     background-color: #ff002b;
 }
+
 /*---------------------------------------------------------------------------*/
 
 /* ----------------------все відноситься до класу columns------------------------*/
-.columns caption{    
+.table_2 caption{    
     text-align: right; /*розміщення заголовка таблиці зправа*/
 }
 
-.columns thead th{
-    /*border: 1px solid yellow;*/    
+.table_2 thead th{
     background-color: #FFC000 ;
 }
 
-.columns tbody th{
-    /*border: 1px solid yellow;*/    
+.table_2 tbody th{
     background-color: #FFF2CC ;
 }
 
-.columns cite:hover{
-    font-weight: 900;
+.table_2 cite:hover{
+    text-shadow: 2px 2px 3px;
 }
 /*---------------------------------------------------------------------------*/
-
-
-
-
-
-
-
