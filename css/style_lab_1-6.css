@@ -23,6 +23,12 @@
   /* font-size: 16px;*/
   }
 
+  .table_2 table th,.table_2 table td{
+    padding: 2%;
+  /* font-size: 16px;*/
+  }
+
+
   .table_1 table, .table_2 table {     
     width: 92%;   
     border: 1px solid rgba(247, 247, 1, 0.795);  /*задаємо значення меж таблиці*/  
