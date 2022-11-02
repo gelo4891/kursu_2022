@@ -1,0 +1,48 @@
+
+          .box {
+            display: flex;
+            margin: 5%;
+            padding: 5%;
+          /*  justify-content: space-between;*/
+          }
+
+          .div_1 table td{
+            padding: 5%;
+          }
+
+
+.div_1 table, .div_2 table {
+    border: 4px solid blue;
+   /* display: inline-block; /*блочні обьєкти розміщуємо в лінію*/
+    font-size: 55px;
+    text-align: center;
+
+    
+
+}
+
+
+
+
+.div_2 table{
+    background-color: blue;
+    font-weight: 700;
+}
+
+.div_1 table{
+    background-color: brown;
+}
+
+.div_1 td {
+    font-weight: 900;
+}
+
+.div_1 th{
+    font-weight: 300;
+}
+
+@media screen and (max-width:900px) {
+    .box{
+        display: block;
+    }    
+}

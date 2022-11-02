@@ -1,126 +1,113 @@
+/*--------------------------------загальні параметри до двох таблиць-----------------*/
 .flax_div{
     display: flex;
-    margin: 2%;
 }
-/*--------------------------------загальні параметри до двох таблиць-----------------*/
-
-.table_1,.table_2 {
-    width: 46%;  
- 
-}
-
-.table_1 table, .table_2 table{
-    margin: 2%;
-}
-
-.table_1 tbody,.table_2 tbody {
-    font-size: 16px;
-}
-
-
-.table_1 table th,.table_1 table td{
-    padding: 2%;
-  /* font-size: 16px;*/
-  }
-
-  .table_2 table th,.table_2 table td{
-    padding: 2%;
-  /* font-size: 16px;*/
-  }
-
-
-  .table_1 table, .table_2 table {     
-    width: 92%;   
-    border: 1px solid rgba(247, 247, 1, 0.795);  /*задаємо значення меж таблиці*/  
-    border-collapse: collapse;   /* зєднуємо межі таблиць*/ 
-    font-family: 'Literata', sans-serif;  
-    }
-/*
-#id_Country_test {
-    padding-right: 10%;
-    padding-top: 10%;
-}*/
-
-table th, td{     
-    border: 1px solid #FFFF00;   
-}
-
-thead th {
-    font-size: 1.2em;
-}
-
-caption{
-    font-size: 1.3em; /*розмір шрифта заголовка*/
-    font-weight: bold;/*жирность шрифта*/  
-   /* padding: 0.3em;/*відступ з усіх сторін*/
-}
-
-th{  
-    font-weight: 700;
-}
-
-td{    
-    font-weight: 300;    
-}
-
-@media screen and (max-width: 900px) {
-    .flax_div{
-        display: block;   
-    }
-
-    .table_1,.table_2 {
-        width: 100%;     
-        margin: 2%;
-      }
-
-      .table_1 table, .table_2 table{ 
-        width: 92%;
-      }
-}
-
 /*-----------------------------------------------------------------------------------*/
 
-/* ----------------------все відноситься до класу rows--------------------------------*/
-
-
-.table_1 thead th{    
-    /*border: 1px solid yellow;*/
-    color: aliceblue;
-    background-color: #FFC000 ;
+.table_1, .table_2{
+    margin: 2%;
+    width: 46%; 
+    font-family:'Literata', sans-serif;     
 }
 
-.table_1 tr:nth-child(2n+2){
-    background-color: #FFF2CC ;
-}
-
-.table_1 th{
+.table_1 table{
+    width: 100%;
     text-align: left;
 }
 
+.table_1 table,.table_2 table{
+    width: 100%;    
+    font-size: 16px;
+}
+
 .table_1 caption{
-    caption-side:bottom; /*розміщення заголовка таблиці знизу*/
+    caption-side: bottom;
+    padding: 0.4em;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.table_2 caption{
+    text-align: right;
+    padding: 0.3em;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 .table_1 tbody tr:hover {
     background-color: #ff002b;
 }
 
-/*---------------------------------------------------------------------------*/
-
-/* ----------------------все відноситься до класу columns------------------------*/
-.table_2 caption{    
-    text-align: right; /*розміщення заголовка таблиці зправа*/
+.table_1 tbody tr:nth-child(2n+2) {
+    background-color: #FFF2CC
+}
+.table_1 thead th{
+    padding: 0.5em 0.3em 0.5em 0.3em;
+    font-size: 1.2em; 
+    font-weight: 700; 
+    background-color: #FFC000 ;      
+    color: aliceblue;
 }
 
 .table_2 thead th{
-    background-color: #FFC000 ;
+    padding: 0.5em 0.3em 0.5em 0.3em;
+    font-size: 1.2em; 
+    font-weight: 700; 
+    background-color: #FFC000 ;    
+ }
+
+
+ .table_1 tbody th{    
+    padding: 0.7em 0.3em 0.3em 0.3em;
 }
 
-.table_2 tbody th{
+.table_1 tbody td{
+    padding: 0.7em 0.3em 0.3em 0.3em;
+}
+
+.table_2 tbody th{    
+    padding: 0.7em 0.3em 0.3em 0.3em;
     background-color: #FFF2CC ;
+}
+
+.table_2 tbody td{    
+    padding: 0.7em 0.3em 0.3em 0.3em;
+}
+
+.table_1 table, .table_1 td, .table_1 th{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+.table_2 table, .table_2 td, .table_2 th{
+    border: 1px solid blue;
+    border-collapse: collapse;
 }
 
 .table_2 cite:hover{
     text-shadow: 2px 2px 3px;
 }
-/*---------------------------------------------------------------------------*/
+
+/*--------------------------------------Зміни при зменшенні вікна менше 900px-------------------------------------*/
+@media screen and (max-width: 900px) {
+    .flax_div{
+        display: block;   
+    }
+
+  .table_1,.table_2{
+        width: 100%;  
+        margin: 2%;   
+      }
+     /* .table_1 thead th{
+        padding: 2%;    
+        color: aliceblue;
+        background-color: #FFC000 ;  
+    }
+  
+*/
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+
