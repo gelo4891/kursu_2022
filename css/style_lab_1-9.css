@@ -30,7 +30,6 @@ flex-direction: row;
 
 main{
     display: flex;
-    
 }
 
 .main_div_1_1_img, .main_div_1_2_img{
@@ -96,7 +95,7 @@ main{
     background-size: contain;
     width: 100%;
     min-height: 250px;  
-    background-position: top center
+   /* background-position: top center*/
 }
 
 
@@ -106,7 +105,7 @@ main{
     background-size: contain;
     width: 100%;
     min-height: 150px;  
-    border: none;
+  /*  border: none;*/
 }
 
 footer{
@@ -118,5 +117,60 @@ footer{
 }
 
 /*--------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) {
+    .main_div_1{
+        width: 100%;
+    }
+    
+    .main_div_2{
+        width: 100%;  
+    }
+
+    main{        
+        flex-direction: column;
+        margin-right: 2%;
+        }   
+
+    .main_div_2{
+        display: flex;
+        flex-wrap: nowrap;
+        border: 1px solid red;
+        background-color: #C0C1F6;
+        margin: 1%;
+    }  
+
+    .main_div_1_1_img, .main_div_1_2_img{
+        background-image: url(../img/1_9_img/leaves_1.jpg);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 100%;
+        min-height: 250px;  
+    }
+
+
+    .main_div_2_1,.main_div_2_2,.main_div_2_3{
+        width: 33%;
+        border: 1px solid red;
+        margin: 0%;
+        padding: 2%;
+
+    }
+    
+
+    .main_div_2_1_1_img{
+        background-image: url(../img/1_9_img/dog.jpg);
+        background-repeat: no-repeat; 
+        background-size: contain;
+        width: 100%;
+        min-height: 140px;      
+    }
+
+  
+    
+
+
+}
+
+
 @media screen and (max-width: 425px) {
 }
