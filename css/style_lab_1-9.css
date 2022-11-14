@@ -150,7 +150,7 @@ footer{
 
     .main_div_2_1,.main_div_2_2,.main_div_2_3{
         width: 33%;
-        border: 1px solid red;
+    /*    border: 1px solid red;*/
         margin: 0%;
         padding: 2%;
 
@@ -173,4 +173,18 @@ footer{
 
 
 @media screen and (max-width: 425px) {
+    main{        
+        flex-direction: column;        
+        } 
+    .main_div_2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main_div_2_1,.main_div_2_2,.main_div_2_3{
+            width: 100%;
+        /*    border: 1px solid red;*/
+            margin: 0%;
+            padding: 2%;
+    }
 }
