@@ -1,0 +1,262 @@
+BODY{    
+    font-family: Garamond, sans-serif;    
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  color: gray;
+ 
+  font-size: 14px;
+}
+
+/*-----------------DIV--------head_div_class-----------------------------------------------*/
+
+.head_div_class{
+    display: flex;
+    width: 100%;  
+    margin-left: 3%;
+  /*  justify-content: flex-start;*/
+}
+
+/*--------------розміщення по екрану--------------------*/
+
+.head_div_class>*{
+    display: flex;
+}
+
+.head_div_class_DOM{    
+    flex: 1 1 35%;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.div_header_HREF{     
+    flex: 1 1 50%;
+    border: 1px solid blue;
+    align-items: center;  
+}
+
+/*--------------------------------*/
+.div_header_HREF >*{
+    margin-left: 1%;
+}
+/*--------------------------------*/
+
+.div_header_icon{        
+    flex: 1 1 15%;
+    align-items: center;   
+    border: 1px solid darkorange;    
+}
+/*------------------------------------------*/
+
+a#head_div_class_DOM_id_a{  
+  width: 30px;
+  height: 30px;  
+  border-right: 2px solid gray;
+  margin-right: 4%;
+  padding-right: 4%;
+  }
+
+
+  a#head_div_class_DOM_id_a:hover {
+    /* opacity: 0    ;*/
+    color: black;  
+ }
+
+  .head_div_class_DOM_id_image {
+    background-image: url("../img/icon/hom_page_1.png");    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;     
+    } 
+
+    .div_header_HREF a{
+        text-decoration: none;
+        display: flex    ;    
+        padding: 0px 7px 0px 7px ;
+        color: unset; /*БЕРЕ КОЛІР З БАТЬКІВСЬКОГО ЕЛЕМЕНТА*/ 
+        /*  white-space: nowrap;*/ /*заборона переносу тексту*/
+        text-shadow: 1px 1px 1px gray ;
+    }
+
+    .div_header_HREF a:hover{
+        background-color: lightslategray;
+        color: antiquewhite;
+        border-radius: 100px;
+       /* padding: 3px 10px 3px 10px;*/
+    }
+
+/*-------END----------DIV--------head_div_class----------------------------------------------*/
+
+/*--------------НЕПОТРІБНИЙ КОД ДЛЯ ПЕРЕВІРКИ------------*/
+
+/*------END--------НЕПОТРІБНИЙ КОД ДЛЯ ПЕРЕВІРКИ------------*/
+
+
+.div_Scroll_down{
+   /* border: 1px solid rgb(132, 0, 255); */
+    background-image: url(../img/1-10_img/1-10-mountains.jpg);
+    background-attachment: fixed;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_Scroll_down h2{    
+    /*border: 1px solid rgb(0, 255, 0);    /*-------test-----*/
+    background-color: lightslategrey;
+    color: azure;
+    padding: 1% 4%;
+ }
+
+.div_Heading_2_section{
+    text-align: center;
+}
+
+.div_Heading_2_h2{
+    border: 1px solid rgb(132, 0, 255); 
+    background-image: url(../img/1-10_img/branch.jpg);
+    background-attachment: fixed;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.div_Heading_2_p, .div_Heading_3_p{
+    text-align: center;
+    color: aliceblue;
+    background-color: black ; 
+    border: 1px solid rgb(132, 0, 255); 
+    font-size: 20px;     
+    padding: 2%;
+}
+
+
+.div_Heading_3_h2{
+    border: 1px solid rgb(132, 0, 255); 
+    background-image: url(../img/1-10_img/forest.jpg);
+    background-attachment: fixed;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center  
+}
+
+
+.div_croll_up{
+    border: 1px solid rgb(132, 0, 255); 
+    background-image: url(../img/1-10_img/1-10-mountains.jpg);
+    background-attachment: fixed;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size:cover;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+
+
+/*-----------------------------іконкі соцмереж підключені з https://cdnjs.cloudflare.com-------------------------------------*/
+a.fa {
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;    
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  a.fa:hover {
+     /* opacity: 0    ;*/ /*устанавливает непрозрачность элемента*/
+     color: black;  
+  }
+  
+  a.fa-facebook {
+    background: dimgray;
+    color: white;   
+    margin: 0%;    
+    padding: 5px 10px 0px 10px;
+  }
+
+.fa-instagram{
+    color: dimgray;
+}
+
+.fa-twitter{  
+    color: dimgray;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .head_div_class{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .div_header_HREF{
+        order: 2;
+        flex: 1 1 100%;
+    }
+
+    .div_header_HREF a{
+        margin-right: auto;
+      /*  padding: 1%;*/
+    }
+
+    .head_div_class_DOM{
+        flex: 1 1 50%;
+    }
+
+    .div_header_ico{
+        flex: 1 1 20%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .body_fon >*{
+        font-size: 10px;
+      }
+
+    a#head_div_class_DOM_id_a{  
+        width: 20px;
+        height: 20px;
+    }
+    
+    a.fa {       
+            font-size: 18px;
+    }
+      
+
+
+    @media screen and (max-width: 400px) {
+       
+        .div_header_HREF >*{
+            background-color: blue;
+      }
+    }
+
+
+/*------------------------------------------------------------------*/
