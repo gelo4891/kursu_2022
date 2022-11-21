@@ -28,12 +28,12 @@ header{
 .head_div_class_DOM{    
     flex: 1 1 35%;
     align-items: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*//*перевірка*/
 }
 
 .div_header_HREF{     
     flex: 1 1 50%;
-    border: 1px solid blue;
+  /*  border: 1px solid blue;*//*перевірка*/
     align-items: center;  
 }
 
@@ -46,7 +46,7 @@ header{
 .div_header_icon{        
     flex: 1 1 15%;
     align-items: center;   
-    border: 1px solid darkorange;    
+    /*border: 1px solid darkorange; */  /*перевірка*/ 
 }
 /*------------------------------------------*/
 

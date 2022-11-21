@@ -1,0 +1,57 @@
+header{
+    background-image: url("../img/1-7-header_background.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.full-width{       
+    flex-wrap: coluwn;    
+ /*   border: 1px solid chartreuse;*/
+}
+
+/*@media screen and (max-width:450px) {*/
+
+.p_menu{
+    border: 1px solid chartreuse;
+    background-color: rgb(208, 255, 0);
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+}
+
+header h1 {
+    margin-bottom: 10%;
+    margin: 0%;        
+    padding: 9.8%;
+    text-align: center;    
+}
+
+.full-width{
+    border: 4px solid lightcoral;
+} 
+
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: burlywood;
+    border: 1px solid rgb(76, 0, 255);
+    outline: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+    text-align: center;
+    /*cursor: pointer;*/
+}
+
+.full-width a:hover{
+        background-color: rgb(205, 50, 171);
+    }
+
+.full-width nav{
+    display: none;        
+  }
+
+.full-width:hover nav{
+    display: block;
+  }
+

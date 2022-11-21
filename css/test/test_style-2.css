@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.test_class_1{
+    border: 1px solid blue;
+    width: 570px;
+    height: 570px;
+}
+
+.test_class_2{
+    border: 1px solid red;
+    width: 80%;
+    height: 550px;
+}
+
+.test_class_2 div:nth-child(1){
+    border: 1px solid rgb(0, 255, 136);
+    width: 75%;
+    height: 25%;
+}
+
+.test_class_2 div:nth-child(2){
+    border: 1px solid rgb(255, 0, 191);
+    width: 75%;
+    height: 25%;
+}
+
+.test_class_2 div:nth-child(3){
+    border: 1px solid rgb(255, 136, 0);
+    width: 75%;
+    height: 25%;
+}
+
+.test_class_2{
+    display: flex;
+    flex-wrap: nowrap;
+}
