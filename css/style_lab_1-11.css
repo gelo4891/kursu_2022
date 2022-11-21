@@ -74,7 +74,7 @@ a#head_div_class_DOM_id_a{
 
     .div_header_HREF a{
         text-decoration: none;
-        display: flex    ;    
+        display: flex;    
         padding: 0px 7px 0px 7px ;
         color: unset; /*БЕРЕ КОЛІР З БАТЬКІВСЬКОГО ЕЛЕМЕНТА*/ 
         /*  white-space: nowrap;*/ /*заборона переносу тексту*/
@@ -237,7 +237,7 @@ a.fa {
 @media screen and (max-width: 470px) {
 
     .body_fon >*{
-        font-size: 10px;
+        font-size: 12px;
       }
 
     a#head_div_class_DOM_id_a{  
@@ -253,8 +253,18 @@ a.fa {
 
     @media screen and (max-width: 400px) {
        
-        .div_header_HREF >*{
-            background-color: blue;
+
+
+        .div_header_HREF{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .div_header_HREF a{             
+            width: 25%;
       }
     }
 
