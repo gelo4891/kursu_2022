@@ -1,0 +1,147 @@
+body{
+  /*  font-family: 'Open Sans', sans-serif;*/
+    
+}
+
+header{
+    font-size: 14px;
+  
+}
+
+/*------------------------------header_div_vxod------------------------------------------*/
+.header_div_vxod{ 
+    display: flex; 
+    border: 1px solid royalblue;
+    justify-content: right;
+    padding: 1% 5.5% 1% 0%;
+ }
+
+.header_div_vxod>*{
+    display: flex;    
+    color: dimgray;
+}
+a#div_vxod_a_id{
+   text-decoration: none; 
+}
+
+
+a#div_vxod_a_id div:hover{ 
+    text-decoration: underline; 
+}
+
+.fa-sign-in{
+    font-size: 30px;
+}
+
+/*
+.header_div_vxod_a_img{    
+    width: 20%;
+    height: 100%;
+    background-image: url("../img/1-11/enter_site.png");
+    background-size: cover;
+    background-position: center;
+   
+}*/
+
+/*
+.header_div_vxod_a_text{
+    width: 80%;
+    border: 1px solid rgb(0, 255, 55);
+}-*
+/*---------------END-----------header_div_vxod-------------------------------*/
+
+
+/*--------------------------header_div_s_l_p-------------------------------*/
+.header_div_s_l_p{
+    display: flex;
+}
+
+.header_div_s_l_p >*{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.header_div_seach{
+    flex: 1 1 30%;
+    border: 1px solid rgb(89, 0, 255);
+}
+
+/*.header_div_seach input{
+  width: 50%;
+  border: 1px solid rgb(89, 0, 255);
+}*/
+
+/*
+.header_div_seach_img{
+    width: 50%;
+    height: 20%;
+    background-image: url("../img/1-11/enter_site.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+*/
+
+.header_div_logo{ 
+    flex: 1 1 40%;
+    
+    height: 87px;
+    background-image: url("../img/1-11/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid royalblue;
+}
+
+.header_div_price{
+    flex: 1 1 30%;    
+}
+
+.header_div_price_a{
+    display: inline-flex;
+    width: 200px;
+    height: 16px;
+    text-decoration: none;
+}
+/*
+.header_div_price div:nth-child(1){ 
+    width: 10%;
+    height: 100%;    
+    background-image: url("../img/1-11/basket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}*/
+
+/*.header_div_price_a div:nth-child(2){    
+    width: 90%;
+    height: 100%;       
+}*/
+
+.header_div_price_a div:nth-child(2) span{    
+    color: red;    
+}
+
+/*-------------END-------------header_div_s_l_p-------------------------------*/
+.nav_menu{
+    background-color: black;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.nav_menu ul li>*{
+    color: aliceblue;  
+}
+.nav_menu ul li{
+    display: inline-flex;
+
+}
+
+.nav_menu ul li ul li{
+    display: none;
+}
+
+/*------------END--------------head_div_menu-------------------------------*/
+
