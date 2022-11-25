@@ -40,7 +40,7 @@
                         <!--<div class="header_div_price_a_img"></div>-->
                         <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                         <div>Кошик 3 товара 
-                             <span>530 грн.</span>
+                             <p>530 грн.</p>
                         </div>
                     </a>
                 </div>
@@ -58,33 +58,34 @@
                     </li>
                     <li> <a href="">НАШІ КНИГИ</a>
                         <ul>
-                            <li><a href="">link_1</a></li>
-                            <li><a href="">link_2</a></li>
-                            <li><a href="">link_3</a></li>
-                            <li><a href="">link_4</a></li>
-                            <li><a href="">link_5</a></li>
-                            <li><a href="">link_6</a></li>
-                            <li><a href="">link_7</a></li>
-                            <li><a href="">link_8</a></li>
-                            <li><a href="">link_9</a></li>
-                            <li><a href="">link_10</a></li>
+                            <li><a href="#1">link_1</a></li>
+                            <li><a href="#2">link_2</a></li>
+                            <li><a href="#3">link_3</a></li>
+                            <li><a href="#4">link_4</a></li>
+                            <li><a href="#5">link_5</a></li>
+                            <li><a href="#6">link_6</a></li>
+                            <li><a href="#7">link_7</a></li>
+                            <li><a href="#8">link_8</a></li>
+                            <li><a href="#9">link_9</a></li>
+                            <li><a href="#10">link_10</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Е-КНИГИ</a></li>
-                    <li><a href="">КОМПЛЕКТИ</a></li>
-                    <li><a href="">РОЗПРОДАЖ</a></li>
-                    <li><a href="">ФУТБОЛКИ/ТОРБИНКИ</a></li>
-                    <li><a href="">КОНТАКТИ</a></li>
-                    <li><a href="">ІНФОРМАЦІЯ ДЛЯ ЗАМОВЛЕНЬ</a></li>
+                    <li><a href="#1">Е-КНИГИ</a></li>
+                    <li><a href="#2">КОМПЛЕКТИ</a></li>
+                    <li><a href="#3">РОЗПРОДАЖ</a></li>
+                    <li><a href="#4">ФУТБОЛКИ/ТОРБИНКИ</a></li>
+                    <li><a href="#5">КОНТАКТИ</a></li>
+                    <li><a href="#6">ІНФОРМАЦІЯ ДЛЯ ЗАМОВЛЕНЬ</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
+        <form action="#" method="post">
         <div>            
-            <div>
-                <table>
+            <div class="main_div_table_1">                
+                <table id="main_id_table_1">
                     <tr>
                         <td colspan="2">
                             <p> Ви постійний покупець?<a href="#5"> Щоб увійти, клацніть сюди </a><p>
@@ -93,20 +94,20 @@
                     <tr>
                         <td colspan="2">
                             <p>
-                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>Є КУПОН? <span>НАТИСНІТЬ ТУТ, ЩОБ ВНЕСТИ КОД </span>
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>Є КУПОН? <a href="#=1">НАТИСНІТЬ ТУТ, ЩОБ ВНЕСТИ КОД </a>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">Оплата і Доставка</td>
+                        <td colspan="2">Оплата i Доставка</td>
                     </tr>
                     <tr>
-                        <td>Ім'я<span>*</span></td>
-                        <td>Прізвище<span>*</span></td>
+                        <td>Ім'я<a href="#div_comment_id_star">*</a></td>
+                        <td>Прізвище<a href="#div_comment_id_star">*</a></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="main_input_name"></td>
-                        <td><input type="text" name="main_input_first_name"></td>
+                        <td><input type="text" id="main_input_name" name="main_input_name"></td>
+                        <td><input type="text" id="main_input_first_name" name="main_input_first_name"></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -114,19 +115,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="main_input_compani"></td>
+                        <td colspan="2"><input type="text" id="main_input_compani" name="main_input_compani"></td>
                     </tr>
                     <tr>
-                        <td>E-mail<span>*</span></td>
-                        <td>Телефон<span>*</span></td>
+                        <td>E-mail<a href="#div_comment_id_star">*</a></td>
+                        <td>Телефон<a href="#div_comment_id_star">*</a></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="main_input_e_mail"></td>
-                        <td><input type="text" name="main_input_first_phone"></td>
+                        <td><input type="text" id="main_input_e_mail" name="main_input_e_mail"></td>
+                        <td><input type="text" id="main_input_first_phone" name="main_input_first_phone"></td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <ul>Спосіб доставки<span>*</span>
+                            <ul>Спосіб доставки<a href="#div_comment_id_star">*</a>
                                 <li>Ново почта</li>
                                 <li>Самовивіз</li>
                             </ul>                            
@@ -150,24 +151,100 @@
                         <td colspan="2"><input type="text" name="main_input_number_v"></td>
                     </tr> 
                     <tr>
-                        <td><input type="checkbox" name="main_input_chek"> Створіть профіль?</td>                       
+                        <td><input type="checkbox" name="main_input_chek_1"> Створіть профіль?</td>                       
                     </tr>                 
+                </table> 
+            </div>
+
+            <div class="main_div_table_2">
+                <table id="main_id_table_2">
+                    <tr>
+                        <td colspan="2">Ваше замовлення</td>
+                    </tr>
+                    <tr>
+                        <td>Товар</td>
+                        <td>Всього</td>
+                    </tr>                  
+                    
+                    <tr>
+                        <td>Бірманскі будні * 1</td>
+                        <td>150 грн.</td>
+                    </tr>
+                    <tr>
+                        <td>Хрестоносці * 1</td>
+                        <td>150грн.</td>
+                    </tr>
+                    <tr>
+                        <td>Дявол і Господь Бог * 1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Підсумок</td>
+                        <td>530</td>
+                    </tr>
+                    <tr>
+                        <td>Сума замовлення</td>
+                        <td>530грн.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> 
+                            <p><input type="radio" id="main_input_chek_2" name="main_input_chek_2">
+                            Оплата кредитною карткою</p>
+                            <p>Оплата за допомогою платыжноъ системи LiqPay: Приват24, готівкою у терміналі, карткою будь-якого банку</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><input type="radio" id="main_input_chek_2" name="main_input_chek_2">
+                            Післяплата</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" id="main_input_chek_4" name="main_input_chek_4" value="ОФОРМИТИ ЗАМОВЛЕННЯ">
+                        </td>
+                    </tr>
                 </table>
             </div>
-            <div></div>
-            <div></div>
+
+            <div class="main_div_comment">
+                <p>Термін виконання завдання - до 10 робочих днів <br>
+                Вартість поштових послуг сплачується на поштовому відділенні при отриманні замовлення</p>
+
+                <p><span id ="div_comment_id_star">*</span>
+                    УВАГА! Просимо враховувати, що послуги післяплати поштові оператори 
+                    стягують додаткову комісію: наприклад, вартість даної послуги "Нової пошти" з операцією 
+                    оплати про отримання замовлення у відділенні становить 20 грн +2% від суми грошового переказу. </p>
+                <p>Після надходження замовлення на відділення Нової пошти замовлення зберігається там 3 дні. 
+                    Якщо клієнт протягом цього часу його не забирає, замовлення автоматично повертається на склад видавництва.
+                    Повторне надсилання замовлення можливе лише за умов сплати додаткової вартості кур'єрських послуг
+                </p>
+            </div>
         </div>
 
-        <div></div>
+      
 
-
+    </form>
     </main>
     <footer>
 
         <div class="foter_all">
-            <div class="foter_all_1"></div>
-            <div class="foter_all_2"></div>
-            <div class="foter_all_3"></div>
+            <div class="foter_all_1">
+                <a href="">
+                    <p>@2016-2022, Видавництво Журавського<br>
+                        Політика відшкодування та повернення</p>
+                </a>
+            </div>
+            <div class="foter_all_2">
+                <a href="">
+                    <p><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        Facebook спільнота
+                    </p>
+                </a>
+            </div>
+            <div class="foter_all_3">
+                <p>Розробка сайту  - <a href="#">Kolodjy.info</a></p>
+            </div>
         </div>
 
     </footer>

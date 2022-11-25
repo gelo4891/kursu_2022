@@ -145,3 +145,52 @@ a#div_vxod_a_id div:hover{
 
 /*------------END--------------head_div_menu-------------------------------*/
 
+
+/*--------------------------main-------------------------------*/
+
+/*--------------------------main_table_1-------------------------------*/
+main {
+    display: flex;
+    border: 1px solid red;
+}
+
+
+.main_div_table_1{
+    display: inline-flex;
+    flex: 1 1 100%;
+}
+
+.main_div_table_2{
+    display: inline-flex;
+    flex: 1 1 100%;
+    background-color: coral;
+}
+
+#main_id_table_1, #main_id_table_2{
+    border: 1px solid red;
+}
+
+table, th, td {
+        border: 1px solid;
+    }
+
+
+/*----------END-------------main_table_1-------------------------------*/
+
+/*----------END----------------main-------------------------------*/
+
+/*-------------------------footer-------------------------------*/
+
+.foter_all{
+    display: flex;
+}
+.foter_all>*{
+    display: inline-flex;
+    flex: 1 1 100%;
+    border: 1px solid red;
+    justify-content: center;
+    
+}
+
+
+/*----------END----------------footer-------------------------------*/
