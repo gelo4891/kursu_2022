@@ -1,25 +1,26 @@
 body{
-  /*  font-family: 'Open Sans', sans-serif;*/
-    
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
-header{
-    font-size: 14px;
-  
-}
 
 /*------------------------------header_div_vxod------------------------------------------*/
 .header_div_vxod{ 
     display: flex; 
     border: 1px solid royalblue;
     justify-content: right;
-    padding: 1% 5.5% 1% 0%;
+    margin-top: 10px;
+    padding: 0% 7% 0% 0%;
+    margin-bottom: 1%;
  }
 
 .header_div_vxod>*{
     display: flex;    
     color: dimgray;
 }
+
 a#div_vxod_a_id{
    text-decoration: none; 
 }
@@ -29,9 +30,17 @@ a#div_vxod_a_id div:hover{
     text-decoration: underline; 
 }
 
-.fa-sign-in{
-    font-size: 30px;
+#div_vxod_i_id{
+    font-size: 19px;
+    padding-left: 3px;
 }
+/*
+.header_div_vxod_a_text{
+    font-size: 13px;
+}
+*/
+
+
 
 /*
 .header_div_vxod_a_img{    
@@ -54,6 +63,7 @@ a#div_vxod_a_id div:hover{
 /*--------------------------header_div_s_l_p-------------------------------*/
 .header_div_s_l_p{
     display: flex;
+    margin-bottom: 10px;
 }
 
 .header_div_s_l_p >*{
@@ -63,9 +73,28 @@ a#div_vxod_a_id div:hover{
 }
 
 .header_div_seach{
-    flex: 1 1 30%;
+    flex: 1 1 28%;
     border: 1px solid rgb(89, 0, 255);
+    
 }
+
+.header_div_seach_border{
+   /*border: 1px solid red;*/
+    font-size: 16px;
+    margin-left: 16%;
+    padding: 2% 3%;
+    background-color: azure;
+}
+
+.header_div_seach_input{
+    border: none;
+    background-color: azure;
+}
+
+
+/*
+minlength="4"  
+      maxlength="6" size="6
 
 /*.header_div_seach input{
   width: 50%;
@@ -84,7 +113,7 @@ a#div_vxod_a_id div:hover{
 */
 
 .header_div_logo{ 
-    flex: 1 1 40%;
+    flex: 1 1 43.5%;
     
     height: 87px;
     background-image: url("../img/1-11/logo.jpg");
@@ -95,7 +124,7 @@ a#div_vxod_a_id div:hover{
 }
 
 .header_div_price{
-    flex: 1 1 30%;    
+    flex: 1 1 28.5%;    
 }
 
 .header_div_price_a{
@@ -120,8 +149,13 @@ a#div_vxod_a_id div:hover{
     height: 100%;       
 }*/
 
+.header_div_price_a div:nth-child(2){        
+    font-size: 16px;  
+}
+
 .header_div_price_a div:nth-child(2) span{    
-    color: red;    
+    color: red;  
+    font-size: 16px;  
 }
 
 /*-------------END-------------header_div_s_l_p-------------------------------*/
@@ -132,7 +166,8 @@ a#div_vxod_a_id div:hover{
 }
 
 .nav_menu ul li>*{
-    color: aliceblue;  
+    color: aliceblue; 
+    text-decoration: none; 
 }
 .nav_menu ul li{
     display: inline-flex;
