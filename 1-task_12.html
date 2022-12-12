@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-        <title>Practice 1-11</title>
+        <title>Practice 1-12</title>
         <meta name="author" content="Orlov O.O.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
@@ -40,9 +40,9 @@
                 <div class="header_div_price">
                     <a class="header_div_price_a" href="#3">
                         <!--<div class="header_div_price_a_img"></div>-->
-                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                        <div>Кошик 3 товара <span>530 грн.</span>
-                        </div>
+                        <i id="div_price_i_id" class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        <section>Кошик  3 товари <span>530 грн.</span>
+                        </section>
                     </a>
                 </div>
             </div>
@@ -51,13 +51,14 @@
             <div>
                 <ul>
                     <li><a href="">ГОЛОВНА</a></li>
-                    <li><a href="">ПРО ВИДАВНИЦТВА</a>
-                        <UL>
+                    <li class="nav_men_class_ul_1"><a href="">ПРО ВИДАВНИЦТВО</a>
+                       <ul >
                             <li><a href="">АВТОРИ</a></li>
                             <li><a href="">КНИГАРНІ</a></li>
                         </UL>
                     </li>
-                    <li> <a href="">НАШІ КНИГИ</a>
+
+                    <li class="nav_men_class_ul_2"><a>НАШІ КНИГИ</a>
                        <ul>
                             <li><a href="#1">link_1</a></li>
                             <li><a href="#2">link_2</a></li>
@@ -71,10 +72,10 @@
                             <li><a href="#10">link_10</a></li>
                         </ul>
                     </li>
-                    <li><a href="#1">Е-КНИГИ</a></li>
+                    <li><a href="#1">E-КНИГИ</a></li>
                     <li><a href="#2">КОМПЛЕКТИ</a></li>
                     <li><a href="#3">РОЗПРОДАЖ</a></li>
-                    <li><a href="#4">ФУТБОЛКИ/ТОРБИНКИ</a></li>
+                    <li><a href="#4">ФУТБОЛКИ / ТОРБИНКИ</a></li>
                     <li><a href="#5">КОНТАКТИ</a></li>
                     <li><a href="#6">ІНФОРМАЦІЯ ДЛЯ ЗАМОВЛЕНЬ</a></li>
                 </ul>
@@ -84,27 +85,26 @@
 
     <main>
         <form action="#" method="post">
-        <div>            
+        <div class="main_div">            
             <div class="main_div_table_1">                
                 <table id="main_id_table_1">
                     <tr>
                         <td colspan="2">
-                            <p> Ви постійний покупець?<a href="#5"> Щоб увійти, клацніть сюди </a><p>
+                            <p> Ви постійний покупець?<a href="#5"> Щоб увійти, клацніть сюди </a></p>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <p>
-                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>Є КУПОН? <a href="#=1">НАТИСНІТЬ ТУТ, ЩОБ ВНЕСТИ КОД </a>
-                            </p>
+                        <td id="table_1_td_id" class="table_1_td_class" colspan="2">
+                            <p><i id="table_1_i_id" class="fa fa-times " aria-hidden="true"></i>
+                              <span>  Є КУПОН?</span> <a href="#=1">НАТИСНІТЬ ТУТ, ЩОБ ВНЕСТИ КОД </a></p>                            
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">Оплата i Доставка</td>
                     </tr>
                     <tr>
-                        <td>Ім'я<a href="#div_comment_id_star">*</a></td>
-                        <td>Прізвище<a href="#div_comment_id_star">*</a></td>
+                        <td>Ім'я<a href="#div_comment_id_star" title="Обовязкове поле">*</a></td>
+                        <td>Прізвище<a href="#div_comment_id_star" title="Обовязкове поле">*</a></td>
                     </tr>
                     <tr>
                         <td><input type="text" id="main_input_name" name="main_input_name"></td>
@@ -119,8 +119,8 @@
                         <td colspan="2"><input type="text" id="main_input_compani" name="main_input_compani"></td>
                     </tr>
                     <tr>
-                        <td>E-mail<a href="#div_comment_id_star">*</a></td>
-                        <td>Телефон<a href="#div_comment_id_star">*</a></td>
+                        <td>E-mail<a href="#div_comment_id_star" title="Обовязкове поле">*</a></td>
+                        <td>Телефон<a href="#div_comment_id_star" title="Обовязкове поле">*</a></td>
                     </tr>
                     <tr>
                         <td><input type="text" id="main_input_e_mail" name="main_input_e_mail"></td>
@@ -158,10 +158,10 @@
             </div>
 
             <div class="main_div_table_2">
+                
                 <table id="main_id_table_2">
-                    <tr>
-                        <td colspan="2">Ваше замовлення</td>
-                    </tr>
+                    <caption>Ваше замовлення</caption>
+                        
                     <tr>
                         <td>Товар</td>
                         <td>Всього</td>
@@ -222,9 +222,6 @@
                 </p>
             </div>
         </div>
-
-      
-
     </form>
     </main>
     <footer>
