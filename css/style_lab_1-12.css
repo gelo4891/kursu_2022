@@ -177,20 +177,6 @@ margin-left: 11%;
    
    
 }
-
-/*
-.nav_men_class_ul_1:hover ul {    
-    
-    border: 1px solid red;   
-}
-*/
-
-
-
-
-
-
-
 /*------------END--------------head_div_menu-------------------------------*/
 
 
@@ -233,6 +219,12 @@ margin-left: 11%;
     align-items: center;
 }
 
+#main_id_table_1 tr:nth-child(7) td>*{
+    width: 100%;
+    height: 33px;
+    font-size: 20px;
+}
+
 #main_id_table_1 tr:nth-child(1) td{
     padding-top: 5px;
 }
@@ -258,12 +250,62 @@ margin-left: 11%;
     padding: 21px 0px 1px 0px;
 }
 
-#main_id_table_1 tr:nth-child(5) td,
-#main_id_table_1 tr:nth-child(6) td,
-#main_id_table_1 tr:nth-child(7) td{
-    padding-bottom: 10px;
+#main_id_table_1 tr:nth-child(5) td{
+    padding-bottom: 14px;
 }
 
+#main_id_table_1 tr:nth-child(6) td{
+    padding-bottom: 4px;
+}
+
+
+
+
+#main_id_table_1 tr:nth-child(7) td{
+    padding-bottom: 14px;
+}
+
+#main_id_table_1 tr:nth-child(9) td{
+    padding-bottom: 20px;
+}
+
+#main_id_table_1 tr:nth-child(10) td{
+    padding-bottom: 3px;
+}
+
+#main_id_table_1 tr:nth-child(11) td{
+    width: 100%;   
+   
+}
+
+.main_div_table_select_1_class {
+    width: 100%;
+    height: 37px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0%;
+}
+
+#main_id_table_1 tr:nth-child(12) td{
+padding: 17px 0px 4px 1px;
+}
+
+.main_div_table_select_2_class {
+    width: 100%;
+    height: 37px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0%;
+}
+
+
+#main_id_table_1 tr:nth-child(14) td{
+    padding: 17px 0px 4px 1px;
+    }
+
+#main_id_table_1 tr:nth-child(16) td{
+        padding: 24px 0px 4px 1px;
+        }
 
 #main_id_table_1 tr:nth-child(5) td:nth-child(1),
 #main_id_table_1 tr:nth-child(9) td:nth-child(1) { 
@@ -282,15 +324,16 @@ margin-left: 11%;
     height: 33px;        
 }
 
-#main_id_table_1 tr:nth-child(10) li,
-#main_id_table_1 tr:nth-child(11) li{
-    display: none;
-}
 
-#main_id_table_1 tr:nth-child(7) td>*{
+
+
+
+#main_id_table_1 .main_input_number_v_class{
     width: 100%;
-    height: 33px;
-    font-size: 20px;
+    height: 32px;
+    font-size: 16px;
+   /* border: none;*/
+   /* border-radius: 0%;*/
 }
 /*
 #main_id_table_1 tr:nth-child(5)  {
@@ -298,25 +341,99 @@ margin-left: 11%;
     }
     */
 /*-------------END-------------main_table_1-------------------------------*/
+
+/*-----------------------main_table_2-------------------------------*/
+
+
+/*.main_div_table_2 table {margin: 0 auto;}*/
+
+
 .main_div_table_2{
     flex: 1 1 45%;
     margin-top: 12%;
-    /*width: 100%;*/
     background-color: coral;
 }
 
 
-
-#main_id_table_2 caption{
-    font-size: 27px;
-    color: aliceblue;
-    text-align: left;
-    padding: 5%;
+.main_div_table_2 tbody{
+    display: block;
+    margin: 0% 4% 0% 4%;
 }
 
 
-/*----------END-------------main_table_1-------------------------------*/
+#main_id_table_2 caption{
+    display: flex;
+    font-size: 27px;
+    color: aliceblue;
+    text-align: left;
+    padding: 5% 5% 4% 5%;
 
+}
+
+.main_div_table_2 tbody tr:nth-child(-n+6) td{
+    height: 52px;
+    
+}
+
+.main_div_table_2 tbody tr:nth-child(-n+5) td:nth-child(1){    
+    font-size: 16px;
+    border-bottom: 1px solid darkgrey;
+
+}
+
+.main_div_table_2 tbody tr:nth-child(-n+8) td:nth-child(1){    
+    padding-left: 12px;
+}
+
+.main_div_table_2 tbody tr:nth-child(-n+5) td:nth-child(2){
+     border-bottom: 1px solid darkgrey;
+     /*padding-right: 12px;*/
+  }
+
+.main_div_table_2 tbody tr:nth-child(6) td:nth-child(1) {    
+    font-size: 18px;
+    color: aliceblue;;
+}
+
+.main_div_table_2 tbody tr:nth-child(6) td:nth-child(2) {    
+    font-size: 25px;
+    color: aliceblue;;
+}
+
+.main_div_table_2 tbody tr:nth-child(7) td p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#main_input_chek_2_1{
+    width: 18px;
+    height: 18px;
+}
+#main_input_chek_2_1::after{
+    border: 1px solid red;
+    background-color: brown;
+}
+
+
+.main_div_table_2 tbody tr:nth-child(n5+3) td {    
+    font-size: 18px;
+   /* padding: 2.3% 0% 4.2% 7%;*/
+}
+
+.main_div_table_2 tbody td:nth-child(2) {
+    text-align: end;
+   /* padding-right: 7%;*/
+    font-size: 16px;
+}
+
+.main_div_table_2 tbody tr:nth-child(9) input{
+    border-radius: 0;
+    width: 47%;
+    height: 43px;
+}
+
+/*----------END-------------main_table_2-------------------------------*/
 /*----------END----------------main-------------------------------*/
 
 /*-------------------------footer-------------------------------*/

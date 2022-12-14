@@ -127,20 +127,29 @@
                         <td><input type="text" id="main_input_first_phone" name="main_input_first_phone"></td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <ul>Спосіб доставки<a href="#div_comment_id_star">*</a>
-                                <li>Ново почта</li>
-                                <li>Самовивіз</li>
-                            </ul>                            
-                        </td>
+                        <td colspan="2">Спосіб доставки<a href="#div_comment_id_star">*</a><td>
                     </tr>    
                     <tr>
                         <td colspan="2">
-                            <ul>Адреса
-                                <li>Київ</li>
-                                <li>Харків</li>
-                                <li>Полтава</li>
-                            </ul>                            
+                            <select class="main_div_table_select_1_class" name="main_div_table_select_1">
+                                <option value="1">Ново почта</option>
+                                <option value="2">Самовивіз</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Адреса
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                             <select class="main_div_table_select_2_class" name="main_div_table_select_2">
+                                <option  selected disabled>Населений пункт</option> 
+                                <option value="1">Київ</option>
+                                <option value="2">Харків</option>
+                                <option value="3">Полтава</option>
+                            </select>
                         </td>
                     </tr>  
                     <tr>
@@ -149,10 +158,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="main_input_number_v"></td>
+                        <td colspan="2">
+                            <input type="text" class="main_input_number_v_class" name="main_input_number_v" >
+                        </td>
                     </tr> 
                     <tr>
-                        <td><input type="checkbox" name="main_input_chek_1"> Створіть профіль?</td>                       
+                        <td><input type="checkbox" name="main_input_chek_1" class="main_input_chek_1_class"> Створіть профіль?</td>                       
                     </tr>                 
                 </table> 
             </div>
@@ -163,40 +174,40 @@
                     <caption>Ваше замовлення</caption>
                         
                     <tr>
-                        <td>Товар</td>
-                        <td>Всього</td>
+                        <td><p>Товар</p></td>
+                        <td><p>Всього</p></td>
                     </tr>                  
                     
                     <tr>
-                        <td>Бірманскі будні * 1</td>
+                        <td><p>Бірманскі будні <span>*1</span></p></td>
                         <td>150 грн.</td>
                     </tr>
                     <tr>
-                        <td>Хрестоносці * 1</td>
-                        <td>150грн.</td>
+                        <td>Хрестоносці <span>*1</span></td>
+                        <td>230 грн.</td>
                     </tr>
                     <tr>
-                        <td>Дявол і Господь Бог * 1</td>
-                        <td></td>
+                        <td>Дявол і Господь Бог <span>*1</span></td>
+                        <td>150 грн.</td>
                     </tr>
                     <tr>
                         <td>Підсумок</td>
-                        <td>530</td>
+                        <td>530 грн.</td>
                     </tr>
                     <tr>
                         <td>Сума замовлення</td>
-                        <td>530грн.</td>
+                        <td>530 грн.</td>
                     </tr>
                     <tr>
                         <td colspan="2"> 
-                            <p><input type="radio" id="main_input_chek_2" name="main_input_chek_2">
+                            <p><input type="radio" id="main_input_chek_2_1" name="main_input_chek_2" value="1">
                             Оплата кредитною карткою</p>
                             <p>Оплата за допомогою платыжноъ системи LiqPay: Приват24, готівкою у терміналі, карткою будь-якого банку</p>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <p><input type="radio" id="main_input_chek_2" name="main_input_chek_2">
+                            <p><input type="radio" id="main_input_chek_2_2" name="main_input_chek_2" value="2">
                             Післяплата</p>
                         </td>
                     </tr>
