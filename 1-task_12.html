@@ -48,14 +48,14 @@
             </div>
 
         <nav class="nav_menu">
-            <div>
-                <ul>
+            <div id="wrap">
+                <ul class="navbar"> 
                     <li><a href="">ГОЛОВНА</a></li>
                     <li class="nav_men_class_ul_1"><a href="">ПРО ВИДАВНИЦТВО</a>
-                       <ul >
+                       <ul>
                             <li><a href="">АВТОРИ</a></li>
                             <li><a href="">КНИГАРНІ</a></li>
-                        </UL>
+                       </ul>
                     </li>
 
                     <li class="nav_men_class_ul_2"><a>НАШІ КНИГИ</a>
@@ -132,7 +132,7 @@
                     <tr>
                         <td colspan="2">
                             <select class="main_div_table_select_1_class" name="main_div_table_select_1">
-                                <option value="1">Ново почта</option>
+                                <option value="1">Нова почта</option>
                                 <option value="2">Самовивіз</option>
                             </select>
                         </td>
@@ -163,7 +163,10 @@
                         </td>
                     </tr> 
                     <tr>
-                        <td><input type="checkbox" name="main_input_chek_1" class="main_input_chek_1_class"> Створіть профіль?</td>                       
+                        <td>
+                            <input type="checkbox" id="main_input_chek_1" class="main_input_chek_1_class">                            
+                            <label for="main_input_chek_1">Створіть профіль?</label>
+                        </td>                       
                     </tr>                 
                 </table> 
             </div>
@@ -200,15 +203,16 @@
                     </tr>
                     <tr>
                         <td colspan="2"> 
-                            <p><input type="radio" id="main_input_chek_2_1" name="main_input_chek_2" value="1">
-                            Оплата кредитною карткою</p>
-                            <p>Оплата за допомогою платыжноъ системи LiqPay: Приват24, готівкою у терміналі, карткою будь-якого банку</p>
+                           <p> <input type="radio" id="main_input_chek_2_1" name="main_input_chek_2" value="1">
+                            <label for="main_input_chek_2_1">Оплата кредитною карткою</label>    </p>             
+                               <p>Оплата з допомогою платыжноъ системи LiqPay: Приват24, готівкою у терміналі, карткою будь-якого банку</p>                         
                         </td>
+                        
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <p><input type="radio" id="main_input_chek_2_2" name="main_input_chek_2" value="2">
-                            Післяплата</p>
+                            <input type="radio" id="main_input_chek_2_2" name="main_input_chek_2" value="2">
+                            <label for="main_input_chek_2_2">Післяплата</label>
                         </td>
                     </tr>
                     <tr>
@@ -220,16 +224,16 @@
             </div>
 
             <div class="main_div_comment">
-                <p>Термін виконання завдання - до 10 робочих днів <br>
+                <p>Термін виконання замовлення - до 10 робочих днів <br>
                 Вартість поштових послуг сплачується на поштовому відділенні при отриманні замовлення</p>
 
                 <p><span id ="div_comment_id_star">*</span>
-                    УВАГА! Просимо враховувати, що послуги післяплати поштові оператори 
-                    стягують додаткову комісію: наприклад, вартість даної послуги "Нової пошти" з операцією 
+                    УВАГА! Просимо враховувати, що за послугу післяплати поштові оператори 
+                    стягують додаткову комісію: наприклад, вартість даної послуги "Нової пошти" з опцією 
                     оплати про отримання замовлення у відділенні становить 20 грн +2% від суми грошового переказу. </p>
-                <p>Після надходження замовлення на відділення Нової пошти замовлення зберігається там 3 дні. 
+                <p>Після надходження на відділення Нової пошти, замовлення зберігається там три дні. 
                     Якщо клієнт протягом цього часу його не забирає, замовлення автоматично повертається на склад видавництва.
-                    Повторне надсилання замовлення можливе лише за умов сплати додаткової вартості кур'єрських послуг
+                    Повторне надсилання замовлення можливе лише за умови сплати додаткової вартості кур'єрських послуг
                 </p>
             </div>
         </div>
@@ -239,20 +243,22 @@
 
         <div class="foter_all">
             <div class="foter_all_1">
-                <a href="">
-                    <p>@2016-2022, Видавництво Журавського<br>
-                        Політика відшкодування та повернення</p>
-                </a>
+                <p> @2016-2022, Видавництво Журавського<br>
+                    <a href="">                     
+                        Політика відшкодування та повернення
+                    </a>
+                </p>
             </div>
             <div class="foter_all_2">
-                <a href="">
-                    <p><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        Facebook спільнота
-                    </p>
-                </a>
+                <p>
+                    <a href="">
+                         <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                         <span>Facebook спільнота</span>                    
+                    </a>
+                </p>
             </div>
             <div class="foter_all_3">
-                <p>Розробка сайту  - <a href="#">Kolodjy.info</a></p>
+                <p>Розробка сайту  - <span><a href="#">Kolodjy.info</a></span></p>
             </div>
         </div>
 
