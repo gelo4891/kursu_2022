@@ -5,7 +5,6 @@ body{
     font-size: 13px;   
 }
 
-
 /*------------------------------header_div_vxod------------------------------------------*/
 .header_div_vxod{ 
     display: flex; 
@@ -67,8 +66,7 @@ a#div_vxod_a_id div:hover{
 
 
 .header_div_logo{ 
-    flex: 1 1 40%;
-    
+    flex: 1 1 40%;    
     height: 87px;
     background-image: url("../img/1-11/logo.jpg");
     background-size: contain;
@@ -121,8 +119,7 @@ margin-left: 11%;
     position: relative;
     align-items: center;
     justify-content: center;
-
-   height: 42px;  
+    height: 43px;  
 }
 
 .nav_menu ul li>*{
@@ -240,7 +237,7 @@ margin-left: 11%;
 
 #table_1_td_id{
     background-color: red; 
-    height: 60px;
+    height: 62px;
 }
 
 #table_1_i_id{
@@ -268,12 +265,12 @@ margin-left: 11%;
 
 #main_id_table_1 tr:nth-child(1) td{
   /*  padding-top: 4px;*/
-  height: 50px;
+  height: 47px;
 }
 
 #main_id_table_1 tr:nth-child(1) td p{
-    padding: 0;
     margin: 0;
+    padding-top: 8px;
   }
 
 #main_id_table_1 tr:nth-child(1) td:hover a{
@@ -501,15 +498,16 @@ padding: 17px 0px 4px 1px;
 
 
 .main_div_table_2 tbody tr:nth-child(9) td{
-   height: 70px;
+   height: 67px;
 }
 
 
 .main_div_table_2 tbody tr:nth-child(9) input{
     border-radius: 0;
     border: 0;
-    width: 45%;
-    height: 45px;
+    padding: 0px 13px 0px 13px;
+   /* width: 45%;*/
+    height: 43px;
     margin: 0;
     font-size: 17px;
     color: azure;
@@ -578,7 +576,6 @@ padding: 17px 0px 4px 1px;
     flex: 1 1 25%;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .foter_all_3 a{
@@ -608,6 +605,7 @@ padding: 17px 0px 4px 1px;
 
 /*--------------------------1150-------------------------------*/
 @media screen and (max-width: 1150px) {
+
     .nav_menu ul li > *{
         font-size: 8px;
     }
@@ -618,20 +616,17 @@ padding: 17px 0px 4px 1px;
 
 
       .header_div_seach {
-        flex: 1 1 25%;
-        justify-content: end;
+        flex: 1 1 30%;
+       /* justify-content: end;*/
       }
 
       .header_div_logo {
-        flex: 1 1 40%;
+        flex: 1 1 35%;
       }
 
       .header_div_price {
-        flex: 1 1 30%;
-      }
-
-      .header_div_s_l_p div{
-        border: 1px solid red
+        flex: 1 1 22%;
+        justify-content: flex-start;
       }
 
       .header_div_seach_border {
@@ -639,8 +634,93 @@ padding: 17px 0px 4px 1px;
       }
 
       .main_div {   
-        margin: 0% 8% 0% 9%;  
+        margin: 0% 9% 0% 9%;  
       }
+
+      .nav_menu ul li > * {
+        font-size: 10px;
+      }
+
+      .navbar{
+        margin: 0;
+        padding: 0;
+        padding-left: 27px;
+      }
+
+      .navbar > li {
+        margin: 0px 6px 0px 5px;
+      }
+
+      .nav_menu ul li {
+        height: 40px;
+      }
+
+      .main_div_table_2 {
+        margin-top: 14.5%;
+      }
+
+      #main_id_table_2 caption {       
+        font-size: 27px;   
+        padding: 7% 0% 5% 6%;
+      }
+
+      .main_div_table_2 tbody {
+        margin: 0% 5% 0% 5%;
+      }
+
+      .main_div_table_2 tbody tr:nth-child(7) td {
+        height: 115px;
+        border: 1px solid red;
+      }
+
+      .main_div_table_2 tbody tr:nth-child(7) td p:nth-child(1) {
+         font-size: 15px;
+         height: 30%;
+      }
+
+      .main_div_table_2 tbody tr:nth-child(7) td p:nth-child(2) {
+        font-size: 15px;
+        height: 45%;
+     }
+
+     .main_div_comment {
+        height: 221px;
+        }
+
+      .foter_all_1{
+        flex: 1 1 30%;
+        justify-content: end;
+      }
+    
+    .foter_all_2{
+        flex: 1 1 45%;
+    }
+    
+    .foter_all_3{
+        flex: 1 1 25%;   
+        justify-content: start;
+    }
 }
+    /*-------------------------------950px--------------------------------*/
+    @media screen and (max-width: 950px) {
+
+        .header_div_vxod {
+            padding: 0% 12% 0% 0%;
+          }
+ 
+    div {
+        border: 1px solid red;
+    }
+
+    .navbar{
+    <i class="fa fa-bars" aria-hidden="true"></i>
+    }
+
+
+
+
+
+   } 
+
 
 /*----------END----------------1150-------------------------------*/
